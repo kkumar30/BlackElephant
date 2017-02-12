@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MainActivity.this , SecondActivity.class);
-                intent.putExtra("Car", listView.getItemAtPosition(i).toString());
+                intent.putExtra("Cars", listView.getItemAtPosition(i).toString());
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private class Example
+    /*private class Example
     {
         private String hello;
 
@@ -71,5 +71,5 @@ public class MainActivity extends AppCompatActivity {
         {
             return hello;
         }
-    }
+    }*/
 }
