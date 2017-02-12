@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    
+
     <string-array name="Cars">
         <item>Model S</item>
         <item>Model 3</item>
