@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    
+    <string-array name="Cars">
+        <item>Model S</item>
+        <item>Model 3</item>
+        <item>Model X</item>
+        <item>Model Y</item>
+    </string-array>
+</resources>
