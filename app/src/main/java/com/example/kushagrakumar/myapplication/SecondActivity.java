@@ -24,17 +24,13 @@ public class SecondActivity extends AppCompatActivity {
 
             if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model S")) {
                 CarImage.setImageDrawable(ContextCompat.getDrawable(SecondActivity.this, R.drawable.s));
-            }
-            else if(mtoolbar.getTitle().toString().equalsIgnoreCase("Model 3"))
-            {
+            } else if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model 3")) {
                 CarImage.setImageDrawable(ContextCompat.getDrawable(SecondActivity.this, R.drawable.three));
-            }
-            else if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model X"))
+            } else if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model X")) {
                 CarImage.setImageDrawable(ContextCompat.getDrawable(SecondActivity.this, R.drawable.x));
+            } else if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model Y")) {
+                CarImage.setImageDrawable(ContextCompat.getDrawable(SecondActivity.this, R.drawable.y));
             }
-            /*else if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model Y")){
-            CarImage.setImageDrawable(ContextCompat.getDrawable(SecondActivity.this, R.drawable.y));
-            }*/
-
+        }
     }
 }
