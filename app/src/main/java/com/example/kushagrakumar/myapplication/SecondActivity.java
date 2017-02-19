@@ -1,9 +1,13 @@
 package com.example.kushagrakumar.myapplication;
 
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.Toast;
@@ -22,6 +26,8 @@ public class SecondActivity extends AppCompatActivity {
         mtoolbar = (Toolbar) findViewById(R.id.toolbar1);
         CarImage = (ImageView) findViewById(R.id.imageView);
         carRating = (RatingBar) findViewById(R.id.ratingBar);
+        Button button = (Button) findViewById(R.id.button2);
+
 
         Bundle bundle = getIntent().getExtras();
 
@@ -40,12 +46,27 @@ public class SecondActivity extends AppCompatActivity {
 
         }
 
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //To cshow the map view of the location of the car
+                Intent intentSecondary = new Intent(SecondActivity.this, MapsActivity.class);
+                startActivity(intentSecondary);
+
+            }
+        });
+
+
+
         carRating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
                //Toast.makeText(SecondActivity.this, String.valueOf(rating), Toast.LENGTH_LONG).show(); //for displaying value of stars
             }
         });
+
+
+
 
 
 
