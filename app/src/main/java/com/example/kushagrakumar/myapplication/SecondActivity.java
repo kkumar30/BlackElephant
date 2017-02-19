@@ -5,11 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
+import android.widget.RatingBar;
+import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
 
     Toolbar mtoolbar;
     ImageView CarImage;
+    RatingBar carRating;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +21,10 @@ public class SecondActivity extends AppCompatActivity {
 
         mtoolbar = (Toolbar) findViewById(R.id.toolbar1);
         CarImage = (ImageView) findViewById(R.id.imageView);
+        carRating = (RatingBar) findViewById(R.id.ratingBar);
 
         Bundle bundle = getIntent().getExtras();
+
         if (bundle != null) {
             mtoolbar.setTitle(bundle.getString("Cars"));
 
@@ -31,6 +37,17 @@ public class SecondActivity extends AppCompatActivity {
             } else if (mtoolbar.getTitle().toString().equalsIgnoreCase("Model Y")) {
                 CarImage.setImageDrawable(ContextCompat.getDrawable(SecondActivity.this, R.drawable.y));
             }
+
         }
+
+        carRating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+               //Toast.makeText(SecondActivity.this, String.valueOf(rating), Toast.LENGTH_LONG).show(); //for displaying value of stars
+            }
+        });
+
+
+
     }
 }

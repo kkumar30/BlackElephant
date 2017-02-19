@@ -33,8 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
-        android:layout_marginLeft="55dp"
         android:id="@+id/ratingBar"
-        style="@style/Widget.AppCompat.RatingBar.Indicator" />
+        android:secondaryProgressTint="@android:color/holo_red_dark"
+        android:progressTint="@android:color/holo_red_dark"
+        android:layout_marginLeft="55dp" />
 
 </RelativeLayout>
