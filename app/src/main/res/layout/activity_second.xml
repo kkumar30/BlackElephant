@@ -38,15 +38,48 @@
         android:progressTint="@android:color/holo_red_dark"
         android:layout_marginLeft="55dp" />
 
+    <!--Distance Text-->
+    <TextView
+        android:text="Within 3 miles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:autoText="false" />
+
     <Button
         android:text="See in Map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button2"
-        android:elevation="0dp"
+        android:elevation="2dp"
         android:backgroundTint="@color/colorPrimary"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="5dp" />
+
+    <!--Price Text-->
+    <TextView
+        android:text="$5/hr."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/textPrice"
+        android:layout_below="@+id/imageView"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="5dp" />
 
 </RelativeLayout>
