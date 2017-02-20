@@ -1,6 +1,7 @@
 package com.example.kushagrakumar.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,6 +53,18 @@ public class SecondActivity extends AppCompatActivity {
                 //To cshow the map view of the location of the car
                 Intent intentSecondary = new Intent(SecondActivity.this, MapsActivity.class);
                 startActivity(intentSecondary);
+                /*Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("http://maps.google.com/maps?daddr=42.5666,-71.945")); //Removed Starting address saddr=20.344,34.34&
+                        //Cureent Destination Geo at Leicester
+                startActivity(intent);*/
+
+
+                /**
+                 *Use code below for directly putting the address query
+                 * Can be used for later stages
+                 */
+                /*Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("google.navigation:q=an+address+city"));*/
 
             }
         });

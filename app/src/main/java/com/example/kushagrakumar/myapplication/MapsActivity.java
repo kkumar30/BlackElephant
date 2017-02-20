@@ -43,7 +43,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng carFmt = new LatLng(37.5, -121.9);
         mMap.addMarker(new MarkerOptions().position(carAddress).title("Location of Car"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(carAddress));
-        mMap.setMinZoomPreference((float) 9);//increase value for more zoom in
+        mMap.setMinZoomPreference((float) 9.5);//increase value for more zoom in
         mMap.setMyLocationEnabled(true);
     }
 }
