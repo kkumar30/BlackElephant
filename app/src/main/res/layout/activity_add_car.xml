@@ -36,8 +36,51 @@
         android:layout_marginLeft="14dp"
         android:layout_marginStart="14dp" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="?attr/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_centerHorizontal="true" />
 
-    <!--Price Text-->
+
+    <!--Address Text-->
+    <TextView
+        android:text="ADDRESS:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editAddress"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="?attr/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_toRightOf="@+id/address"
+        android:layout_toEndOf="@+id/address" />
+
+
+
+    <!--Posting Button-->
     <Button
         android:text="Post my Car!"
         android:layout_width="wrap_content"
@@ -50,17 +93,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="152dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignBaseline="@+id/name"
-        android:layout_alignBottom="@+id/name"
-        android:layout_centerHorizontal="true"
-        android:textColor="?attr/colorPrimaryDark"
-        android:textColorHighlight="?attr/colorPrimaryDark" />
+
+
 
 
 </RelativeLayout>
