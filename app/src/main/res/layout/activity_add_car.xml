@@ -22,19 +22,6 @@
 
 
     <!--NAME Text-->
-    <TextView
-        android:text="NAME:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:id="@+id/name"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:layout_below="@+id/toolbar1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -50,19 +37,6 @@
 
 
     <!--Address Text-->
-    <TextView
-        android:text="ADDRESS:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:id="@+id/address"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        android:layout_below="@+id/toolbar1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp" />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,9 +52,66 @@
         android:layout_toRightOf="@+id/address"
         android:layout_toEndOf="@+id/address" />
 
+    <!--Car Make and Type Text-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editCarMakeType"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="?attr/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/carMakeType"
+        android:layout_alignBottom="@+id/carMakeType"
+        android:layout_toRightOf="@+id/carMakeType"
+         />
 
 
+    <!--Price-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editPrice"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="?attr/colorPrimaryDark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/price"
+        android:layout_alignBottom="@+id/price"
+        android:layout_toRightOf="@+id/price"
+        />
     <!--Posting Button-->
+
+    <TextView
+        android:text="CAR MAKE AND TYPE:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:id="@+id/carMakeType"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_below="@+id/editAddress"
+        android:layout_alignLeft="@+id/price"
+        android:layout_alignStart="@+id/price" />
+
+    <TextView
+        android:text="ADDRESS:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:id="@+id/address"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_below="@+id/editName"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
     <Button
         android:text="Post my Car!"
         android:layout_width="wrap_content"
@@ -89,12 +120,35 @@
         android:elevation="2dp"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="#FFFFFF"
+        android:layout_marginBottom="105dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="152dp" />
+        android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:text="NAME:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:id="@+id/name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_toLeftOf="@+id/editName"
+        android:layout_toStartOf="@+id/editName" />
 
-
+    <TextView
+        android:text="ASKING PRICE:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/editCarMakeType"
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignStart="@+id/address" />
 
 
 </RelativeLayout>
