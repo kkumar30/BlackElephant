@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     ListView listView;
+    Button buttonAdd;
 
 
     @Override
@@ -24,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Setting the objects
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.app_name));
         listView = (ListView) findViewById(R.id.listview);
+        buttonAdd= (Button) findViewById(R.id.buttonAdd);
+
 
         //Setting the adapter
         ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(MainActivity.this , android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Cars));
@@ -40,7 +44,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    listView.setAdapter(mAdapter);
+        listView.setAdapter(mAdapter);
+
+
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent addACar = new Intent(MainActivity.this, AddCarActivity.class);
+                startActivity(addACar);
+            }
+        });
+
         /*final TextView kushagraLabel = (TextView) findViewById(R.id.textView);
         Button button = (Button) findViewById(R.id.button);
         final Example sampleClass = new Example();

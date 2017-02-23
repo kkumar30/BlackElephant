@@ -20,11 +20,24 @@
 
     <ListView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="439dp"
     android:id="@+id/listview"
     android:layout_marginTop="10dp"
     android:layout_alignParentLeft = "true"
-    android:layout_alignParentRight="true" />
+    android:layout_alignParentRight="true"
+        android:layout_weight="0.81" />
+
+    <Button
+        android:text="Add your Car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdd"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_weight="0.10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
 
 
-    </LinearLayout>
+
+</LinearLayout>

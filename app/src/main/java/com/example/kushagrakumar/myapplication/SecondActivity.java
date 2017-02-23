@@ -58,7 +58,6 @@ public class SecondActivity extends AppCompatActivity {
                         //Cureent Destination Geo at Leicester
                 startActivity(intent);*/
 
-
                 /**
                  *Use code below for directly putting the address query
                  * Can be used for later stages

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kushagrakumar.myapplication.AddCarActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:text="@string/app_name"
+        android:textColor="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar1"
+        android:gravity="center_vertical" />
+
+
+
+    <!--NAME Text-->
+    <TextView
+        android:text="NAME:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+
+    <!--Price Text-->
+    <Button
+        android:text="Post my Car!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:elevation="2dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHighlight="?attr/colorPrimaryDark" />
+
+
+</RelativeLayout>
